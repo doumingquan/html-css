@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+
+    height: 100%;
+}
+
+.nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav a {
+    color: #b0b0b0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+    position: relative;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.wrap {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.nav .sep {
+    color: #424242;
+    margin: 0 3.6px;
+}
+
+/* 下载默认是不存在的 */
+.download {
+    width: 124px;
+    /* 下载默认是隐藏，高度给个 */
+    height: 0;
+    /* height: 138px; */
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    /* 位置需要定位 */
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+    left: 50%;
+    margin-left: -62px;
+    text-align: center;
+}
+
+.download img {
+    width: 90px;
+    margin: 18px auto 0;
+    text-align: center;
+}
+
+.float-left li:hover>.download {
+    height: 138px;
+}
+
+.download p {
+    color: #333;
+    font-size: 12px;
+}
+
+/* 箭头 */
+.stri {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+    display: none;
+}
+
+/* 划到箭头后显示 */
+.float-left li:hover>.stri {
+    display: block;
+}
+
+.cart {
+    background-color: #424242;
+    padding: 0 15px;
+    margin-left: 30px;
+}
+
+.cart-content {
+    width: 320px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+    right: 0;
+    line-height: 50px;
+    text-align: center;
+    display: none;
+}
+
+.float-right li:hover>.cart-content {
+    display: block;
+}
+
+.cart:hover {
+    background-color: #fff;
+}
+
+.cart:hover>a {
+    color: #ff6700;
+}

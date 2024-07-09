@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    background-color: #ddd9d9;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+
+    height: 100%;
+}
+
+.nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav a {
+    color: #b0b0b0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.nav ul li {
+    float: left;
+    position: relative;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.wrap {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.nav .sep {
+    color: #424242;
+    margin: 0 3.6px;
+}
+
+/* 下载默认是不存在的 */
+.download {
+    width: 124px;
+    /* 下载默认是隐藏，高度给个 */
+    height: 0;
+    /* height: 138px; */
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    /* 位置需要定位 */
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+    left: 50%;
+    margin-left: -62px;
+    text-align: center;
+}
+
+.download img {
+    width: 90px;
+    margin: 18px auto 0;
+    text-align: center;
+}
+
+.float-left li:hover>.download {
+    height: 138px;
+}
+
+.download p {
+    color: #333;
+    font-size: 12px;
+}
+
+/* 箭头 */
+.stri {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+    display: none;
+}
+
+/* 划到箭头后显示 */
+.float-left li:hover>.stri {
+    display: block;
+}
+
+.cart {
+    background-color: #424242;
+    padding: 0 15px;
+    margin-left: 30px;
+}
+
+.cart-content {
+    width: 320px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    position: absolute;
+    overflow: hidden;
+    top: 40px;
+    right: 0;
+    line-height: 50px;
+    text-align: center;
+    display: none;
+}
+
+.float-right li:hover>.cart-content {
+    display: block;
+}
+
+.cart:hover {
+    background-color: #fff;
+}
+
+.cart:hover>a {
+    color: #ff6700;
+}
+
+/* 最顶部导航栏结束 */
+
+/* 第二部分导航栏 start */
+.white_nav {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-top: 22px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.nav-bar {
+    width: 825px;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    padding-left: 10px;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar li a {
+    color: #333;
+    padding: 0 10px;
+}
+
+.nav-bar li a:hover {
+    color: #ff6700;
+}
+
+.search {
+    width: 296px;
+    height: 100px;
+}
+
+.search input {
+    width: 244px;
+    height: 50px;
+    float: left;
+    border: 1px solid #e0e0e0;
+    /* 不加box-sizing会导致input和button一上一下 默认有border宽度把盒子撑开了 */
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding: 0 10px;
+    /* input右边框和button左边框重叠了 */
+    border-right: 0;
+    /* 去除点击input后出现的内边框 */
+    outline: none;
+}
+
+.search button {
+    width: 52px;
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+    border: 1px solid #e0e0e0;
+}
+
+.search button:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+/* 滑动门 */
+.mi-phone-list,
+.redmi-phone-list {
+    position: absolute;
+    width: 100%;
+    height: 229px;
+    border-top: 1px solid #eee;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .1);
+    left: 0;
+    top: 100px;
+    float: left;
+    background-color: #fff;
+    display: none;
+}
+
+.nav-bar li:hover>.mi-phone-list {
+    display: block;
+}
+
+.nav-bar li:hover>.redmi-phone-list {
+    display: block;
+}
+
+.image-box {
+    margin: 0 20px;
+    width: 150px;
+    border-right: 1px solid #b0b0b0;
+}
+
+.image-box img {
+    width: 120px;
+}
+
+.mi-phone-list li {
+    /* line-height受到继承影响，恢复正常 */
+    line-height: normal;
+}
+
+.redmi-phone-list li {
+    line-height: normal;
+}
+
+.nav-bar .name {
+    color: #333;
+    text-align: center;
+}
+
+.nav-bar .price {
+    color: #ff6700;
+    text-align: center;
+}
+
+/* 第二部分导航栏 end */
+
+/* banner start */
+
+/* banner end */
