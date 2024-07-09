@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滚动转换效果</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+        <!-- 这边会有一张椭圆形状的照片 -->
+        <span class="curve">
+            <img src="images/curve.png">
+        </span>
+    </section>
+</body>
+<script>
+    var element = document.querySelector('.curve');
+    window.addEventListener('scroll', function () {
+        var value = 1 + window.scrollY / -500;
+        element.style.transform = `scaleY(${value})`
+    })
+</script>
+
+</html>
