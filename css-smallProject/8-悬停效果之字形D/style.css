@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 15px #03a9f4;
+    /* 上面这些样式得到了一个圆环 */
+    box-sizing: border-box;
+    text-align: center;
+    transition: .5s;
+}
+
+.main:hover {
+    border-radius: 0;
+}
+
+.main:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    transform: rotate(45deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.main p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+
+.main:hover p {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
