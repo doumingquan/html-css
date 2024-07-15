@@ -45,12 +45,3 @@ ul li:hover .text {
     opacity: 1;
     transform: translateY(-20px);
 }
-
-
-
-
-
-ul li:hover a:before {
-    width: 50%;
-    transform: translateX(100%);
-}
