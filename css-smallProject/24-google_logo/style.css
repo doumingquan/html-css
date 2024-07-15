@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: steelblue;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    border-top: 50px solid #ea4355;
+    border-right: 50px solid #4285f4;
+    border-bottom: 50px solid #34a853;
+    border-left: 50px solid #fbb605;
+}
+
+/* .logo::before {
+    content: "";
+    position: absolute;
+    top: -155px;
+    left: -155px;
+    border-top: 100px solid transparent;
+    border-right: 100px solid #4285f4;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-radius: 50%;
+    transform: rotate(90deg);
+     以上得到半径为50px的圆的四分之一 
+} */
+.logo::before {
+    content: "";
+    position: absolute;
+    top: -139px;
+    right: -139px;
+    border-top: 100px solid transparent;
+    border-right: 100px solid #fff;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid transparent;
+    transform: rotate(90deg);
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    width: 100px;
+    height: 50px;
+    background-color: #4285f4;
+    transform: translate(-1px, -27px);
+}
