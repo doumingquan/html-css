@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+
+h2::selection {
+    background-color: rgb(243, 7, 7);
+    color: #fff;
+}
+
+p::selection {
+    background-color: sandybrown;
+    color: blueviolet;
+}
