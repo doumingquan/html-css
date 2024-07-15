@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide {
+    width: 300px;
+    height: 100px;
+    background: url(slide.jpg);
+    transition: .2s;
+    border: 2px solid blue;
+}
+
+.slide:hover {
+    background: url(slide.jpg);
+    background-position: 0 -100px;
+}
