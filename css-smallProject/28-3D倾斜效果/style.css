@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(234, 239, 241);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center a {
+    display: inherit;
+    width: 150px;
+    height: 50px;
+    color: #262626;
+    font-size: 20px;
+    background: transparent;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #262626;
+    transition: .5s;
+    /* 倾斜15度 */
+    transform: skew(15deg);
+}
+
+.center a:hover {
+    background-color: skyblue;
+    color: #fff;
+}
+
+.center span:nth-child(1) {
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    background-color: #efefef;
+    border: 1px solid #262626;
+    top: 7px;
+    left: -17px;
+    transform: skewY(-45deg);
+}
+
+.center span:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background-color: #efefef;
+    border: 1px solid #262626;
+    top: 50PX;
+    right: 7px;
+    /* transform: skewX(135deg); */
+    /* skewX(135deg)和skewX(-45deg) 一样 */
+    transform: skewX(-45deg);
+    box-shadow: 0 40px 25px rgba(0, 0, 0, .2);
+}
